@@ -1,1 +1,20 @@
-1
+# 1 git的基本配置
+* 设置用户信息
+git config --global user.name"Derrick"
+git config --global user.email"Derrick@qq.com"
+* 查看配置信息
+git config --global user.name
+git config --global user.emai
+* git初始化仓库
+git init
+# 2 git的四个核心区域
+本地仓库：是在开发人员自己电脑上的Git仓库,存放我们的代码(.git 隐藏文件夹就是我们的本地仓库)远程仓库。
+远程仓库：是在远程服务器上的Git仓库,存放代码(可以是github.com或者gitee.com 上的仓库,或者自己该公司的服务器)
+工作区：我们自己写代码(文档)的地方
+暂存区：暂存区是位于 本地仓库（.git 目录）内部的一个特殊文件，名字叫 index。它的作用是 临时保存你已经修改、并打算提交的文件。
+          git add                git commit                git push
+工作区  ─────────▶  暂存区  ─────────▶  本地仓库  ─────────▶  远程仓库
+ (代码)          (index文件)          (.git目录)          (GitHub等)
+Clone：克隆，就是将远程仓库复制到本地仓库
+Push：推送，就是将本地仓库代码上传到远程仓库
+Pull：拉取，就是将远程仓库代码下载到本地仓库,并将代码克隆到本地工作区
